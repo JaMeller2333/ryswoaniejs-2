@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Jn Meller</title>
+<script type="text/javascript">
+    function rysuj() {
+        var rysowanie = document.getElementById('obrazek');
+        var rodzaj = rysowanie.getContext('2d');
+        rodzaj.fillStyle = 'yellow';
+        rodzaj.fillRect(0, 0, 100, 100);
+        rodzaj.strokeRect(0, 0, 100, 100);
+        rodzaj.fillStyle = 'red';
+        rodzaj.fillRect(30, 30, 30, 30);
+
+        rodzaj.beginPath();
+        rodzaj.moveTo(240, 240);
+        rodzaj.lineTo(290, 190);
+        rodzaj.lineTo(344, 240);
+        rodzaj.lineTo(290, 290);
+        rodzaj.lineTo(240, 240);
+        rodzaj.fillStyle = 'green';
+        rodzaj.fill();
+    } 
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="600" height="600">
+</canvas>
+</body>
+</html>

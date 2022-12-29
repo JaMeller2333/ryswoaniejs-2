@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF=8">
+</head>
+
+<body>
+    <textarea cols="150" rows="100"> </html>
+    <!DOCTYPE html>
+    <html lang="pl">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Jan Meller Zad 16</title>
+        <style></style>
+        <script type="text/javascript">
+            function rysuj() {
+                var rysowanie = document.getElementById('obrazek');
+                var iksde = rysowanie.getContext('2d')
+
+                iksde.beginPath();
+                iksde.arc(80, 100, 50, 0, 2 * Math.PI);
+                iksde.lineWidth = 8;
+                iksde.strokeStyle = "blue";
+                iksde.stroke();
+
+                iksde.beginPath();
+                iksde.arc(200, 100, 50, 0, 2 * Math.PI);
+                iksde.lineWidth = 8;
+                iksde.strokeStyle = "black";
+                iksde.stroke();
+
+                iksde.beginPath();
+                iksde.arc(320, 100, 50, 0, 2 * Math.PI);
+                iksde.lineWidth = 8;
+                iksde.strokeStyle = "red";
+                iksde.stroke();
+
+                iksde.beginPath();
+                iksde.arc(130, 150, 50, 0, 2 * Math.PI);
+                iksde.lineWidth = 8;
+                iksde.strokeStyle = "yellow";
+                iksde.stroke();
+
+                iksde.beginPath();
+                iksde.arc(260, 150, 50, 0, 2 * Math.PI);
+                iksde.lineWidth = 8;
+                iksde.strokeStyle = "green";
+                iksde.stroke();
+            }
+        </script>
+    </head>
+    
+    <body onload="rysuj();">
+        <canvas id="obrazek" width="500" height="500">
+        </canvas>
+    </body>
+    
+    </html>
+</textarea>
+</body>
+
+</html>
